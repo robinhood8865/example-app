@@ -14,7 +14,7 @@ const requestLogger = (request, response, next) => {
   next()
 }
 
-// app.use(express.static('build'))
+app.use(express.static('build'))
 app.use(requestLogger)
 app.use(express.json())
 app.use(cors())
